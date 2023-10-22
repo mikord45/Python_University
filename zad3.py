@@ -4,7 +4,7 @@ class Modes(Enum):
     MONTHLY = 'monthly'
     YEARLY = 'yearly'
 
-invalidValueMessage = 'Podano niepoprawną wartość'
+invalidValueMessage = 'Podano niepoprawną wartość w odpowiedzi na rodzaj dochodu'
 
 try:
     selected_mode = Modes.YEARLY
@@ -27,7 +27,7 @@ try:
 except ValueError:
     print('Podane wartości są niepoprawne')
 except Exception as e:
-    if(e == invalidValueMessage):
+    if(str(e) == invalidValueMessage):
         print(e)
     else:
         print('Coś poszło nie tak')

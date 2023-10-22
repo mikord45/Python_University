@@ -1,6 +1,4 @@
-import time
 
-# try:
 age = input("Podaj wiek: ")
 money = input("Podaj ilość pieniędzy w portfelu: ")
 
@@ -24,6 +22,6 @@ try:
 
     print(toPrint)
 except ValueError:
-    print('Podany wiek oraz ilość pieniędzy są niepoprawne')
+    print('Podany wiek lub/oraz ilość pieniędzy są niepoprawne')
 except Exception as e:
     print('Coś poszło nie tak')

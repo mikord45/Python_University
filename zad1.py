@@ -1,6 +1,5 @@
 import time
 
-# try:
 name = input("Podaj imie: ")
 age = input("Podaj wiek: ")
 
